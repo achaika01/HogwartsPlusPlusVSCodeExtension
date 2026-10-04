@@ -1,0 +1,11 @@
+program   ::= { statement } exit
+stmt      ::= decl | asmt | if_stmt
+decl      ::= type [ "animagus" ] ident "🚂" expr "🏰"
+type      ::= "knut" | "galleon" | "🪄"
+asmt      ::= ident "accio" expr
+exit      ::= "evanesco" expr
+if_stmt   ::= "🔓" expr "🚂" statement { statement } "🏰" [ "🔒" "🚂" statement { statement } "🏰" ]
+expr      ::= arith [ ("⚖️" | "⚔️") arith ]
+arith     ::= term { ("geminio" | "reducto") term }
+term      ::= factor { "engorgio" factor }
+factor    ::= number | "lumos" | "nox" | ident

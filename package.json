@@ -1,0 +1,35 @@
+{
+  "name": "hogwarts-plus-plus",
+  "displayName": "Hogwarts++",
+  "description": "Language support for Hogwarts++ — emoji-keyword language",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:hogwarts"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "hogwarts",
+      "aliases": ["Hogwarts++", "hogwarts"],
+      "extensions": [".hgw"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hogwarts",
+      "scopeName": "source.hgw",
+      "path": "./syntaxes/hogwarts.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "hogwarts",
+      "path": "./snippets/hogwarts.json"
+    }]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
