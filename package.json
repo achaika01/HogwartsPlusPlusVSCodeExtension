@@ -3,6 +3,12 @@
   "displayName": "Hogwarts++",
   "description": "Language support for Hogwarts++ — emoji-keyword language",
   "version": "0.1.0",
+  "license": "MIT",
+  "publisher": "q1112",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/q1112/hogwarts-plus-plus"
+  },
   "engines": { "vscode": "^1.80.0" },
   "categories": ["Programming Languages"],
   "activationEvents": ["onLanguage:hogwarts"],
