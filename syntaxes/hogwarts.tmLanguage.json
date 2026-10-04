@@ -1,0 +1,28 @@
+{
+  "name": "Hogwarts++",
+  "scopeName": "source.hgw",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#emoji-operators" },
+    { "include": "#numbers" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "keywords": {
+      "match": "\\b(knut|galleon|animagus|accio|evanesco|geminio|reducto|engorgio|lumos|nox)\\b",
+      "name": "keyword.control.hogwarts"
+    },
+    "emoji-operators": {
+      "match": "(🚂|🏰|🪄|🔓|🔒|⚖️|⚔️)",
+      "name": "keyword.operator.emoji.hogwarts"
+    },
+    "numbers": {
+      "match": "\\b[0-9]+\\b",
+      "name": "constant.numeric.hogwarts"
+    },
+    "identifiers": {
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+      "name": "variable.other.hogwarts"
+    }
+  }
+}
