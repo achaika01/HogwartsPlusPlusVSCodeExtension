@@ -1,0 +1,47 @@
+{
+  "Variable Declaration": {
+    "prefix": "knut",
+    "body": ["knut ${1:varname} 🚂 ${2:0} 🏰"],
+    "description": "Declare an integer variable"
+  },
+  "Galleon Declaration": {
+    "prefix": "galleon",
+    "body": ["galleon ${1:varname} 🚂 ${2:0} 🏰"],
+    "description": "Declare a float variable"
+  },
+  "Animagus Declaration": {
+    "prefix": "animagus",
+    "body": ["knut animagus ${1:varname} 🚂 ${2:0} 🏰"],
+    "description": "Declare a constant variable"
+  },
+  "Assignment": {
+    "prefix": "accio",
+    "body": ["${1:varname} accio ${2:expr}"],
+    "description": "Assign a value"
+  },
+  "If Statement": {
+    "prefix": "🔓",
+    "body": [
+      "🔓 ${1:condition} 🚂",
+      "\t${2:statement}",
+      "🏰"
+    ],
+    "description": "If statement"
+  },
+  "If-Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "🔓 ${1:condition} 🚂",
+      "\t${2:if_body}",
+      "🏰 🔒 🚂",
+      "\t${3:else_body}",
+      "🏰"
+    ],
+    "description": "If-else statement"
+  },
+  "Exit": {
+    "prefix": "evanesco",
+    "body": ["evanesco ${1:0}"],
+    "description": "Exit program"
+  }
+}
